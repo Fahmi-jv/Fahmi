@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A modern tropical-themed portfolio website">
+    <title>Tropical Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-900 text-white transition-all duration-500">
+    <!-- Toggle Mode -->
+    <div class="fixed top-4 right-4 z-50">
+        <button id="theme-toggle" class="p-2 rounded-full bg-gray-800 hover:bg-green-700 transition">
+            🌙
+        </button>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="h-screen flex items-center justify-center parallax-bg">
+        <div class="text-center glass-card p-8">
+            <h1 class="text-5xl font-bold font-poppins text-green-300">Welcome to My Tropical World</h1>
+            <p class="text-xl font-playfair mt-4 text-gray-300">Exploring elegance in nature</p>
+            <button class="mt-6 px-6 py-3 bg-green-800 hover:bg-green-600 rounded-full text-white transition">Explore</button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-20 px-8">
+        <div class="max-w-4xl mx-auto glass-card p-8">
+            <h2 class="text-3xl font-poppins text-green-300">About Me</h2>
+            <p class="mt-4 font-playfair text-gray-300">I'm a passionate creator blending modern design with tropical aesthetics. My work reflects nature's beauty and elegance.</p>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="py-20 px-8 bg-gray-800">
+        <h2 class="text-3xl font-poppins text-center text-green-300 mb-12">Portfolio</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <div class="glass-card p-4 hover:scale-105 transition transform">
+                <h3 class="font-poppins text-green-200">Project 1</h3>
+                <p class="font-playfair text-gray-400">A tropical masterpiece</p>
+            </div>
+            <div class="glass-card p-4 hover:scale-105 transition transform">
+                <h3 class="font-poppins text-green-200">Project 2</h3>
+                <p class="font-playfair text-gray-400">Elegant design</p>
+            </div>
+            <div class="glass-card p-4 hover:scale-105 transition transform">
+                <h3 class="font-poppins text-green-200">Project 3</h3>
+                <p class="font-playfair text-gray-400">Nature-inspired</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="py-20 px-8">
+        <h2 class="text-3xl font-poppins text-center text-green-300 mb-12">Blog</h2>
+        <div class="max-w-4xl mx-auto glass-card p-8">
+            <h3 class="font-poppins text-green-200">Latest Post</h3>
+            <p class="font-playfair text-gray-400">Thoughts on tropical design trends in 2025.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-20 px-8 bg-gray-800">
+        <div class="max-w-md mx-auto glass-card p-8">
+            <h2 class="text-3xl font-poppins text-green-300 mb-6">Contact Me</h2>
+            <form>
+                <input type="text" placeholder="Name" class="w-full p-3 mb-4 bg-gray-900 border border-green-800 rounded glow-input">
+                <input type="email" placeholder="Email" class="w-full p-3 mb-4 bg-gray-900 border border-green-800 rounded glow-input">
+                <textarea placeholder="Message" class="w-full p-3 bg-gray-900 border border-green-800 rounded glow-input"></textarea>
+                <button type="submit" class="mt-6 px-6 py-3 bg-green-800 hover:bg-green-600 rounded-full text-white transition">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-6 text-center text-gray-400">
+        <p>&copy; 2025 Tropical Portfolio. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
